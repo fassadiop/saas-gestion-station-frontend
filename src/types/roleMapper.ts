@@ -1,20 +1,21 @@
 // src/lib/roleMapper.ts
 
 import { Role } from "@/constants/roles";
-import { UserRole } from "@/types/user";
+import { UserRole } from "@/constants/UserRole";
 
 export const ROLE_TO_USER_ROLE: Record<Role, UserRole> = {
-  [Role.SUPER_ADMIN]: "SuperAdmin",
-  [Role.ADMIN_TENANT_FINANCE]: "AdminTenantFinance",
-  [Role.ADMIN_TENANT_STATION]: "AdminTenantStation",
+  [Role.SUPER_ADMIN]: UserRole.SUPERADMIN,
+  [Role.ADMIN_TENANT_FINANCE]: UserRole.ADMIN_TENANT_FINANCE,
+  [Role.ADMIN_TENANT_STATION]: UserRole.ADMIN_TENANT_STATION,
 
-  [Role.GERANT]: "Gerant",
-  [Role.SUPERVISEUR]: "Superviseur",
-  [Role.POMPISTE]: "Pompiste",
-  [Role.CAISSIER]: "Caissier",
-  [Role.SECURITE]: "Securite",
-  [Role.PERSONNEL_ENTRETIEN]: "Personnel_entretien",
+  [Role.GERANT]: UserRole.GERANT,
+  [Role.SUPERVISEUR]: UserRole.SUPERVISEUR,
+  [Role.POMPISTE]: UserRole.POMPISTE,
+  [Role.CAISSIER]: UserRole.CAISSIER,
+  [Role.SECURITE]: UserRole.SECURITE,
+  [Role.PERSONNEL_ENTRETIEN]: UserRole.PERSONNEL_ENTRETIEN,
 
-  [Role.TRESORIER]: "Tresorier",
-  [Role.COLLECTEUR]: "Collecteur",
+  [Role.TRESORIER]: UserRole.TRESORIER,
+  [Role.COLLECTEUR]: UserRole.COLLECTEUR,
+  [Role.LECTEUR]: UserRole.LECTEUR,
 };
